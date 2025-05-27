@@ -71,6 +71,40 @@ print(f"🎬 Archivo descargado: {video_path}")
 
 
 
+1️⃣ Configurar Git (solo la primera vez en tu PC)
+
+Si aún no tienes Git instalado, instálalo con: 📌 Windows: 
+sudo apt install git    # (Ubuntu/Debian)
+sudo yum install git    # (CentOS/RHEL)
+brew install git        # (Mac)
+
+
+
+
+Luego configura tu usuario global con:
+git config --global user.name "TuNombre"
+git config --global user.email "TuEmail@example.com"
+
+
+mkdir Repositorio-Recursos
+cd Repositorio-Recursos
+git init
+
+mkdir videos audio imágenes modelos scripts
+touch README.md
+
+
+git add .
+git commit -m "📦 Inicializando el repositorio de recursos"
+
+
+git remote add origin https://github.com/TU-USUARIO/repositorio-recursos.git
+git branch -M main
+git push -u origin main
+
+
+
+
 
 
 
